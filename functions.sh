@@ -203,7 +203,7 @@ function git_has_branch {
     local project=$1 # Project is here for test mocks
     local branch=$2
 
-    if git branch -a |grep remotes/origin/$branch>/dev/null; then
+    if git branch -a |grep $branch>/dev/null; then
         return 0
     else
         return 1

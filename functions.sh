@@ -441,7 +441,7 @@ function setup_workspace {
         cd $DEST
         if [ -d /opt/git/$PROJECT ]; then
             # Start with a cached git repo if possible
-            rsync -a /opt/git/${PROJECT}/ `basename $PROJECT`
+            rsync -a --delete /opt/git/${PROJECT}/ `basename $PROJECT`
         fi
         setup_project $PROJECT $base_branch
     done

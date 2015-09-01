@@ -383,7 +383,8 @@ function setup_project {
     # Update git remotes
     git_remote_update
     # Ensure that we don't have stale remotes around
-    git_prune
+    # keep our off tree branch for fortinet tweak.
+    #git_prune
     # See if this project has this branch, if not, use master
     FALLBACK_ZUUL_REF=""
     if ! git_has_branch $project $branch; then

@@ -121,7 +121,7 @@ PROJECTS="openstack/tripleo-heat-templates $PROJECTS"
 PROJECTS="openstack/tripleo-image-elements $PROJECTS"
 PROJECTS="openstack/tripleo-incubator $PROJECTS"
 PROJECTS="openstack/trove $PROJECTS"
-
+PROJECTS="kanaka/noVNC $PROJECTS"
 
 export BASE=/opt/stack
 
